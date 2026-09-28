@@ -1,0 +1,47 @@
+/* 
+	Author: Eject
+	GitHub: https://github.com/Eject37
+	Discord Server: https://discord.gg/8baJSRxXSm
+	Discord: @eject37
+*/
+
+.iconContainer_fea832,
+.icon_fea832 {
+    /* Make the Search icon match the styling of the other icons.*/
+    width: 21px;
+    height: 21px;
+    color: var(--interactive-normal);
+    transition: ease-in-out 0.3s;
+}
+
+.c322aadb96ff59c9-searchBar {
+    /*Полностью скрываем строку поиска*/
+    width: 21px;
+    height: 24px;
+    padding: 0;
+    background: none;
+    transition: ease-in-out 0.3s !important;
+}
+
+.c322aadb96ff59c9-searchBar:hover .iconContainer_fea832,
+.c322aadb96ff59c9-searchBar:hover .icon_fea832,
+.c322aadb96ff59c9-focused .icon_fea832,
+.c322aadb96ff59c9-focused .iconContainer_fea832 {
+    /*Скрываем иконку поиска при наведении*/
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.c322aadb96ff59c9-searchBar:hover,
+.c322aadb96ff59c9-focused .c322aadb96ff59c9-searchBar,
+.c322aadb96ff59c9-open .c322aadb96ff59c9-searchBar {
+    /*Показываем строку поиска при наведении на иконку*/
+    width: 175px;
+    background: var(--background-tertiary);
+}
+
+/* Иконка Скрыть список участников (сверху справа), задаем цвет как будто она не открыта*/
+._9293f6b2fc12398a-selected ._9293f6b2fc12398a-icon {
+    color: var(--interactive-normal) !important;
+}
+
