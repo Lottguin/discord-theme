@@ -5,27 +5,27 @@
   --background-image-blur: 0px;
   --background-image-size: cover;
   --background-image-position: center;
-  --popout-modal-image: url("https://lottguin.github.io/discord-theme/jeannealter.jpg");
-  --popout-modal-blur: 3px;
+  --popout-modal-image: url("https://lottguin.github.io/discord-theme/jeannehome.png");
+  --popout-modal-blur: 0px;
   --popout-modal-size: cover;
-  --popout-modal-position: cover;
-  --home-button-image: url("https://wallpaperaccess.com/full/6295087.png");
-  --home-button-size: center;
+  --popout-modal-position: center;
+  --home-button-image: url("https://lottguin.github.io/discord-theme/jeanne1.png");
+  --home-button-size: cover;
   --home-button-position: center;
-  --serverlist-brightness: 1;
-  --left-brightness: 0.85;
-  --middle-brightness: 0.75;
+  --serverlist-brightness: 0;
+  --left-brightness: 0.4;
+  --middle-brightness: 0.4;
   --right-brightness: 0.1;
-  --popout-modal-brightness: 0.8;
-  --gradient-primary: 242, 2, 26;
-  --gradient-secondary: 8, 7, 7;
-  --gradient-direction: 320deg;
+  --popout-modal-brightness: 0.2;
+  --gradient-primary: 253, 243, 188;
+  --gradient-secondary: 255, 199, 195;
+  --gradient-direction: 90deg;
   --tint-colour: 255, 51, 159;
   --tint-brightness: 0;
   --window-padding: 0px;
   --window-roundness: 0px;
-  --scrollbar-colour: #434343;
-  --link-colour: rgb(219, 0, 0);
+  --scrollbar-colour: #fee0bf;
+  --link-colour: rgb(253, 253, 165);
   --show-gift-gif-buttons: block;
   --font: "Whitney";
   --update-notice-1: none;
@@ -43,4 +43,43 @@
   --rs-streaming-color: #643da7;
   --rs-invisible-color: #747f8d;
   --rs-phone-visible: block;
+  [data-list-item-id="guildsnavhome"] svg {
+    opacity: 0 !important;
+  }
+  [data-list-item-id="guildsnavhome"] [class*="childWrapper"] {
+    background: var(--home-button-image) center / cover no-repeat !important;
+  }
+}
+:root,
+.theme-dark {
+  --text-muted: #fdf3bc !important; /* Chữ mờ: giờ gửi, trạng thái, placeholder */
+  --channels-default: #fdf3bc !important; /* Kênh chưa chọn */
+  --interactive-normal: #fdf3bc !important; /* Icon và nút bình thường */
+  --interactive-muted: #fdf3bc !important; /* Kênh bị tắt thông báo (tối hơn để phân biệt) */
+  --interactive-hover: #fdf3bc !important; /* Khi rê chuột */
+}
+[class*="modeSelected"] [class*="name"],
+[class*="modeSelected"] [class*="icon"],
+[class*="selected"] [class*="channelName"] {
+  color: #0b0b0b !important;
+}
+/*tin nhan*/
+[class*="messageContent"] {
+  color: #fdf3bc !important;
+}
+
+/* Tên người gửi */
+[class*="username"] {
+  color: #ffffff !important;
+}
+
+/* Giờ gửi */
+[class*="timestamp"] {
+  color: #c9bf8f !important;
+}
+[class*="callContainer"],
+[class*="videoGrid"],
+[class*="wrapper"][class*="call"] {
+  background: rgba(1, 1, 1, 0.988) !important;
+  backdrop-filter: blur(0px);
 }
